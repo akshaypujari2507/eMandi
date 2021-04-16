@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.view.OrderCompleteActivity"
+    android:background="@color/colorWhite">
+
+    <TextView
+        android:id="@+id/tv_order_placed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/order_placed"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/size_32sp"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tv_order_placed_success"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_order_placed_success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/your_order_was_placed_successfully"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/size_20sp"
+        android:layout_marginTop="@dimen/size_16dp"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintTop_toBottomOf="@+id/tv_order_placed"
+        app:layout_constraintBottom_toTopOf="@+id/btn_view_order"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_view_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/view_all_order"
+        android:textAllCaps="true"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/btn_curve_corners"
+        android:textSize="@dimen/size_16sp"
+        android:paddingTop="@dimen/size_8dp"
+        android:paddingBottom="@dimen/size_8dp"
+        android:layout_marginTop="@dimen/size_40dp"
+        android:layout_marginRight="@dimen/size_32dp"
+        android:layout_marginLeft="@dimen/size_32dp"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintTop_toBottomOf="@+id/tv_order_placed_success"
+        app:layout_constraintBottom_toTopOf="@+id/tv_go_home"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_go_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/go_home"
+        android:textColor="@color/colorBlue"
+        android:textSize="@dimen/size_20sp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/size_16dp"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintTop_toBottomOf="@+id/btn_view_order"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
